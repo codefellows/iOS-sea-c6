@@ -1,0 +1,130 @@
+{
+    "assets": [
+        {
+            "asset": "CategoriesTests/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }
+    ], 
+    "config": {
+        "APPLICATION_IDENTIFIER": "org.codefellows.CategoriesTests", 
+        "LONG_VERSION": "1", 
+        "SHORT_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "CategoriesTests", 
+            "PRODUCT_NAME": "CategoriesTests"
+        }
+    }, 
+    "defines": {
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 70000
+    }, 
+    "deps": [
+        "UIKit", 
+        "CoreGraphics", 
+        "UIKit", 
+        "Foundation", 
+        "XCTest", 
+        "XCTest", 
+        "UIKit", 
+        "Foundation"
+    ], 
+    "flags": [
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Wshorten-64-to-32", 
+        "-Wno-deprecated-declarations", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-function", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "CategoriesTests-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "CategoriesTests-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "CategoriesTests-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "CategoriesTests-project-headers.hmap", 
+            "hmap": {
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "Categories/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "Categories-Prefix.pch": {
+                    "key": "Categories-Prefix.pch", 
+                    "prefix": "Categories/", 
+                    "suffix": "Categories-Prefix.pch"
+                }, 
+                "UIColor+RandomColor.h": {
+                    "key": "UIColor+RandomColor.h", 
+                    "prefix": "Categories/", 
+                    "suffix": "UIColor+RandomColor.h"
+                }, 
+                "ViewController.h": {
+                    "key": "ViewController.h", 
+                    "prefix": "Categories/", 
+                    "suffix": "ViewController.h"
+                }
+            }, 
+            "type": "iquote"
+        }
+    ], 
+    "infoplists": [
+        "./CategoriesTests/CategoriesTests-Info.plist"
+    ], 
+    "libs": [], 
+    "modules": [], 
+    "pchs": [
+        "./Categories/Categories-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "CategoriesTests/CategoriesTests.m"
+        }
+    ], 
+    "type": "com.apple.product-type.bundle.unit-test", 
+    "version": "1", 
+    "xcode_project": "Categories.xcodeproj"
+}

@@ -1,0 +1,125 @@
+{
+    "assets": [
+        {
+            "asset": "1kPicTests/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }
+    ], 
+    "config": {
+        "APPLICATION_IDENTIFIER": "org.codefellows._1kPicTests", 
+        "LONG_VERSION": "1", 
+        "SHORT_VERSION": "1.0", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "1kPicTests", 
+            "PRODUCT_NAME": "1kPicTests"
+        }
+    }, 
+    "defines": {
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 70000
+    }, 
+    "deps": [
+        "UIKit", 
+        "CoreGraphics", 
+        "UIKit", 
+        "Foundation", 
+        "XCTest", 
+        "XCTest", 
+        "UIKit", 
+        "Foundation"
+    ], 
+    "flags": [
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Wshorten-64-to-32", 
+        "-Wno-deprecated-declarations", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-function", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "1kPicTests-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "1kPicTests-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "1kPicTests-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "1kPicTests-project-headers.hmap", 
+            "hmap": {
+                "1kPic-Prefix.pch": {
+                    "key": "1kPic-Prefix.pch", 
+                    "prefix": "1kPic/", 
+                    "suffix": "1kPic-Prefix.pch"
+                }, 
+                "AppDelegate.h": {
+                    "key": "AppDelegate.h", 
+                    "prefix": "1kPic/", 
+                    "suffix": "AppDelegate.h"
+                }, 
+                "ViewController.h": {
+                    "key": "ViewController.h", 
+                    "prefix": "1kPic/", 
+                    "suffix": "ViewController.h"
+                }
+            }, 
+            "type": "iquote"
+        }
+    ], 
+    "infoplists": [
+        "./1kPicTests/1kPicTests-Info.plist"
+    ], 
+    "libs": [], 
+    "modules": [], 
+    "pchs": [
+        "./1kPic/1kPic-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "1kPicTests/_kPicTests.m"
+        }
+    ], 
+    "type": "com.apple.product-type.bundle.unit-test", 
+    "version": "1", 
+    "xcode_project": "1kPic.xcodeproj"
+}

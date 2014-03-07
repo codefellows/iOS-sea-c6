@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFDD0C2D18C97CC90097B357 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD0C2C18C97CC90097B357 /* Foundation.framework */; };
+		EFDD0C2F18C97CC90097B357 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD0C2E18C97CC90097B357 /* CoreGraphics.framework */; };
+		EFDD0C3118C97CC90097B357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD0C3018C97CC90097B357 /* UIKit.framework */; };
+		EFDD0C3718C97CC90097B357 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C3518C97CC90097B357 /* InfoPlist.strings */; };
+		EFDD0C3918C97CC90097B357 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD0C3818C97CC90097B357 /* main.m */; };
+		EFDD0C3D18C97CC90097B357 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD0C3C18C97CC90097B357 /* AppDelegate.m */; };
+		EFDD0C4018C97CC90097B357 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C3E18C97CC90097B357 /* Main_iPhone.storyboard */; };
+		EFDD0C4318C97CC90097B357 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C4118C97CC90097B357 /* Main_iPad.storyboard */; };
+		EFDD0C4618C97CC90097B357 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD0C4518C97CC90097B357 /* ViewController.m */; };
+		EFDD0C4818C97CC90097B357 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C4718C97CC90097B357 /* Images.xcassets */; };
+		EFDD0C4F18C97CC90097B357 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD0C4E18C97CC90097B357 /* XCTest.framework */; };
+		EFDD0C5018C97CC90097B357 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD0C2C18C97CC90097B357 /* Foundation.framework */; };
+		EFDD0C5118C97CC90097B357 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDD0C3018C97CC90097B357 /* UIKit.framework */; };
+		EFDD0C5918C97CC90097B357 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C5718C97CC90097B357 /* InfoPlist.strings */; };
+		EFDD0C5B18C97CC90097B357 /* Collection_ViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD0C5A18C97CC90097B357 /* Collection_ViewsTests.m */; };
+		EFDD0C8118C985D90097B357 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6418C985D90097B357 /* 1.jpg */; };
+		EFDD0C8218C985D90097B357 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6518C985D90097B357 /* 2.jpg */; };
+		EFDD0C8318C985D90097B357 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6618C985D90097B357 /* 3.jpg */; };
+		EFDD0C8418C985D90097B357 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6718C985D90097B357 /* 4.jpg */; };
+		EFDD0C8518C985D90097B357 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6818C985D90097B357 /* 5.jpg */; };
+		EFDD0C8618C985D90097B357 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6918C985D90097B357 /* 6.jpg */; };
+		EFDD0C8718C985D90097B357 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6A18C985D90097B357 /* 7.jpg */; };
+		EFDD0C8818C985D90097B357 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6B18C985D90097B357 /* 8.jpg */; };
+		EFDD0C8918C985D90097B357 /* Mexture-120mm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6C18C985D90097B357 /* Mexture-120mm.jpg */; };
+		EFDD0C8A18C985D90097B357 /* Mexture-1970.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6D18C985D90097B357 /* Mexture-1970.jpg */; };
+		EFDD0C8B18C985D90097B357 /* Mexture-Dusted.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6E18C985D90097B357 /* Mexture-Dusted.jpg */; };
+		EFDD0C8C18C985D90097B357 /* Mexture-Erosion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C6F18C985D90097B357 /* Mexture-Erosion.jpg */; };
+		EFDD0C8D18C985D90097B357 /* Mexture-Noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7018C985D90097B357 /* Mexture-Noise.jpg */; };
+		EFDD0C8E18C985D90097B357 /* Mexture-Popular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7118C985D90097B357 /* Mexture-Popular.jpg */; };
+		EFDD0C8F18C985D90097B357 /* Mexture-Sanded-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7218C985D90097B357 /* Mexture-Sanded-1.jpg */; };
+		EFDD0C9018C985D90097B357 /* Mexture-Sanded.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7318C985D90097B357 /* Mexture-Sanded.jpg */; };
+		EFDD0C9118C985D90097B357 /* Mexture-Slideshow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7418C985D90097B357 /* Mexture-Slideshow.jpg */; };
+		EFDD0C9218C985D90097B357 /* Mexture-Water_Damage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7518C985D90097B357 /* Mexture-Water_Damage.jpg */; };
+		EFDD0C9318C985D90097B357 /* Mexture-YOLOLOMO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7618C985D90097B357 /* Mexture-YOLOLOMO.jpg */; };
+		EFDD0C9418C985D90097B357 /* Mextures2-1976.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7718C985D90097B357 /* Mextures2-1976.jpg */; };
+		EFDD0C9518C985D90097B357 /* Mextures2-1992.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7818C985D90097B357 /* Mextures2-1992.jpg */; };
+		EFDD0C9618C985D90097B357 /* Mextures2-BokehBabeh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7918C985D90097B357 /* Mextures2-BokehBabeh.jpg */; };
+		EFDD0C9718C985D90097B357 /* Mextures2-Candelabra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7A18C985D90097B357 /* Mextures2-Candelabra.jpg */; };
+		EFDD0C9818C985D90097B357 /* Mextures2-CirclePerk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7B18C985D90097B357 /* Mextures2-CirclePerk.jpg */; };
+		EFDD0C9918C985D90097B357 /* Mextures2-Lock_Jaw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7C18C985D90097B357 /* Mextures2-Lock_Jaw.jpg */; };
+		EFDD0C9A18C985D90097B357 /* Mextures2-SpookyScary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7D18C985D90097B357 /* Mextures2-SpookyScary.jpg */; };
+		EFDD0C9B18C985D90097B357 /* Mextures2-Streaking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7E18C985D90097B357 /* Mextures2-Streaking.jpg */; };
+		EFDD0C9C18C985D90097B357 /* Mextures2-Sunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C7F18C985D90097B357 /* Mextures2-Sunflower.jpg */; };
+		EFDD0C9D18C985D90097B357 /* Mextures2-UFO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFDD0C8018C985D90097B357 /* Mextures2-UFO.jpg */; };
+		EFDD0CA118C9878E0097B357 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDD0CA018C9878E0097B357 /* PhotoCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFDD0C5218C97CC90097B357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFDD0C2118C97CC90097B357 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFDD0C2818C97CC90097B357;
+			remoteInfo = "Collection Views";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFDD0C2918C97CC90097B357 /* Collection Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDD0C2C18C97CC90097B357 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFDD0C2E18C97CC90097B357 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFDD0C3018C97CC90097B357 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFDD0C3418C97CC90097B357 /* Collection Views-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Collection Views-Info.plist"; sourceTree = "<group>"; };
+		EFDD0C3618C97CC90097B357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFDD0C3818C97CC90097B357 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFDD0C3A18C97CC90097B357 /* Collection Views-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Collection Views-Prefix.pch"; sourceTree = "<group>"; };
+		EFDD0C3B18C97CC90097B357 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFDD0C3C18C97CC90097B357 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFDD0C3F18C97CC90097B357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		EFDD0C4218C97CC90097B357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		EFDD0C4418C97CC90097B357 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFDD0C4518C97CC90097B357 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFDD0C4718C97CC90097B357 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EFDD0C4D18C97CC90097B357 /* Collection ViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Collection ViewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFDD0C4E18C97CC90097B357 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EFDD0C5618C97CC90097B357 /* Collection ViewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Collection ViewsTests-Info.plist"; sourceTree = "<group>"; };
+		EFDD0C5818C97CC90097B357 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFDD0C5A18C97CC90097B357 /* Collection_ViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Collection_ViewsTests.m; sourceTree = "<group>"; };
+		EFDD0C6418C985D90097B357 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		EFDD0C6518C985D90097B357 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		EFDD0C6618C985D90097B357 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		EFDD0C6718C985D90097B357 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		EFDD0C6818C985D90097B357 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		EFDD0C6918C985D90097B357 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		EFDD0C6A18C985D90097B357 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		EFDD0C6B18C985D90097B357 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		EFDD0C6C18C985D90097B357 /* Mexture-120mm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-120mm.jpg"; sourceTree = "<group>"; };
+		EFDD0C6D18C985D90097B357 /* Mexture-1970.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-1970.jpg"; sourceTree = "<group>"; };
+		EFDD0C6E18C985D90097B357 /* Mexture-Dusted.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Dusted.jpg"; sourceTree = "<group>"; };
+		EFDD0C6F18C985D90097B357 /* Mexture-Erosion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Erosion.jpg"; sourceTree = "<group>"; };
+		EFDD0C7018C985D90097B357 /* Mexture-Noise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Noise.jpg"; sourceTree = "<group>"; };
+		EFDD0C7118C985D90097B357 /* Mexture-Popular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Popular.jpg"; sourceTree = "<group>"; };
+		EFDD0C7218C985D90097B357 /* Mexture-Sanded-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Sanded-1.jpg"; sourceTree = "<group>"; };
+		EFDD0C7318C985D90097B357 /* Mexture-Sanded.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Sanded.jpg"; sourceTree = "<group>"; };
+		EFDD0C7418C985D90097B357 /* Mexture-Slideshow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Slideshow.jpg"; sourceTree = "<group>"; };
+		EFDD0C7518C985D90097B357 /* Mexture-Water_Damage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-Water_Damage.jpg"; sourceTree = "<group>"; };
+		EFDD0C7618C985D90097B357 /* Mexture-YOLOLOMO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mexture-YOLOLOMO.jpg"; sourceTree = "<group>"; };
+		EFDD0C7718C985D90097B357 /* Mextures2-1976.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-1976.jpg"; sourceTree = "<group>"; };
+		EFDD0C7818C985D90097B357 /* Mextures2-1992.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-1992.jpg"; sourceTree = "<group>"; };
+		EFDD0C7918C985D90097B357 /* Mextures2-BokehBabeh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-BokehBabeh.jpg"; sourceTree = "<group>"; };
+		EFDD0C7A18C985D90097B357 /* Mextures2-Candelabra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-Candelabra.jpg"; sourceTree = "<group>"; };
+		EFDD0C7B18C985D90097B357 /* Mextures2-CirclePerk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-CirclePerk.jpg"; sourceTree = "<group>"; };
+		EFDD0C7C18C985D90097B357 /* Mextures2-Lock_Jaw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-Lock_Jaw.jpg"; sourceTree = "<group>"; };
+		EFDD0C7D18C985D90097B357 /* Mextures2-SpookyScary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-SpookyScary.jpg"; sourceTree = "<group>"; };
+		EFDD0C7E18C985D90097B357 /* Mextures2-Streaking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-Streaking.jpg"; sourceTree = "<group>"; };
+		EFDD0C7F18C985D90097B357 /* Mextures2-Sunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-Sunflower.jpg"; sourceTree = "<group>"; };
+		EFDD0C8018C985D90097B357 /* Mextures2-UFO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mextures2-UFO.jpg"; sourceTree = "<group>"; };
+		EFDD0C9F18C9878E0097B357 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		EFDD0CA018C9878E0097B357 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFDD0C2618C97CC90097B357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD0C2F18C97CC90097B357 /* CoreGraphics.framework in Frameworks */,
+				EFDD0C3118C97CC90097B357 /* UIKit.framework in Frameworks */,
+				EFDD0C2D18C97CC90097B357 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD0C4A18C97CC90097B357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD0C4F18C97CC90097B357 /* XCTest.framework in Frameworks */,
+				EFDD0C5118C97CC90097B357 /* UIKit.framework in Frameworks */,
+				EFDD0C5018C97CC90097B357 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFDD0C2018C97CC90097B357 = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C3218C97CC90097B357 /* Collection Views */,
+				EFDD0C5418C97CC90097B357 /* Collection ViewsTests */,
+				EFDD0C2B18C97CC90097B357 /* Frameworks */,
+				EFDD0C2A18C97CC90097B357 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFDD0C2A18C97CC90097B357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C2918C97CC90097B357 /* Collection Views.app */,
+				EFDD0C4D18C97CC90097B357 /* Collection ViewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFDD0C2B18C97CC90097B357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C2C18C97CC90097B357 /* Foundation.framework */,
+				EFDD0C2E18C97CC90097B357 /* CoreGraphics.framework */,
+				EFDD0C3018C97CC90097B357 /* UIKit.framework */,
+				EFDD0C4E18C97CC90097B357 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFDD0C3218C97CC90097B357 /* Collection Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C9E18C985ED0097B357 /* Images */,
+				EFDD0C3B18C97CC90097B357 /* AppDelegate.h */,
+				EFDD0C3C18C97CC90097B357 /* AppDelegate.m */,
+				EFDD0C3E18C97CC90097B357 /* Main_iPhone.storyboard */,
+				EFDD0C4118C97CC90097B357 /* Main_iPad.storyboard */,
+				EFDD0C4418C97CC90097B357 /* ViewController.h */,
+				EFDD0C4518C97CC90097B357 /* ViewController.m */,
+				EFDD0C4718C97CC90097B357 /* Images.xcassets */,
+				EFDD0C3318C97CC90097B357 /* Supporting Files */,
+				EFDD0C9F18C9878E0097B357 /* PhotoCell.h */,
+				EFDD0CA018C9878E0097B357 /* PhotoCell.m */,
+			);
+			path = "Collection Views";
+			sourceTree = "<group>";
+		};
+		EFDD0C3318C97CC90097B357 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C3418C97CC90097B357 /* Collection Views-Info.plist */,
+				EFDD0C3518C97CC90097B357 /* InfoPlist.strings */,
+				EFDD0C3818C97CC90097B357 /* main.m */,
+				EFDD0C3A18C97CC90097B357 /* Collection Views-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFDD0C5418C97CC90097B357 /* Collection ViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C5A18C97CC90097B357 /* Collection_ViewsTests.m */,
+				EFDD0C5518C97CC90097B357 /* Supporting Files */,
+			);
+			path = "Collection ViewsTests";
+			sourceTree = "<group>";
+		};
+		EFDD0C5518C97CC90097B357 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C5618C97CC90097B357 /* Collection ViewsTests-Info.plist */,
+				EFDD0C5718C97CC90097B357 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFDD0C9E18C985ED0097B357 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD0C6418C985D90097B357 /* 1.jpg */,
+				EFDD0C6518C985D90097B357 /* 2.jpg */,
+				EFDD0C6618C985D90097B357 /* 3.jpg */,
+				EFDD0C6718C985D90097B357 /* 4.jpg */,
+				EFDD0C6818C985D90097B357 /* 5.jpg */,
+				EFDD0C6918C985D90097B357 /* 6.jpg */,
+				EFDD0C6A18C985D90097B357 /* 7.jpg */,
+				EFDD0C6B18C985D90097B357 /* 8.jpg */,
+				EFDD0C6C18C985D90097B357 /* Mexture-120mm.jpg */,
+				EFDD0C6D18C985D90097B357 /* Mexture-1970.jpg */,
+				EFDD0C6E18C985D90097B357 /* Mexture-Dusted.jpg */,
+				EFDD0C6F18C985D90097B357 /* Mexture-Erosion.jpg */,
+				EFDD0C7018C985D90097B357 /* Mexture-Noise.jpg */,
+				EFDD0C7118C985D90097B357 /* Mexture-Popular.jpg */,
+				EFDD0C7218C985D90097B357 /* Mexture-Sanded-1.jpg */,
+				EFDD0C7318C985D90097B357 /* Mexture-Sanded.jpg */,
+				EFDD0C7418C985D90097B357 /* Mexture-Slideshow.jpg */,
+				EFDD0C7518C985D90097B357 /* Mexture-Water_Damage.jpg */,
+				EFDD0C7618C985D90097B357 /* Mexture-YOLOLOMO.jpg */,
+				EFDD0C7718C985D90097B357 /* Mextures2-1976.jpg */,
+				EFDD0C7818C985D90097B357 /* Mextures2-1992.jpg */,
+				EFDD0C7918C985D90097B357 /* Mextures2-BokehBabeh.jpg */,
+				EFDD0C7A18C985D90097B357 /* Mextures2-Candelabra.jpg */,
+				EFDD0C7B18C985D90097B357 /* Mextures2-CirclePerk.jpg */,
+				EFDD0C7C18C985D90097B357 /* Mextures2-Lock_Jaw.jpg */,
+				EFDD0C7D18C985D90097B357 /* Mextures2-SpookyScary.jpg */,
+				EFDD0C7E18C985D90097B357 /* Mextures2-Streaking.jpg */,
+				EFDD0C7F18C985D90097B357 /* Mextures2-Sunflower.jpg */,
+				EFDD0C8018C985D90097B357 /* Mextures2-UFO.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFDD0C2818C97CC90097B357 /* Collection Views */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDD0C5E18C97CC90097B357 /* Build configuration list for PBXNativeTarget "Collection Views" */;
+			buildPhases = (
+				EFDD0C2518C97CC90097B357 /* Sources */,
+				EFDD0C2618C97CC90097B357 /* Frameworks */,
+				EFDD0C2718C97CC90097B357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Collection Views";
+			productName = "Collection Views";
+			productReference = EFDD0C2918C97CC90097B357 /* Collection Views.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFDD0C4C18C97CC90097B357 /* Collection ViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFDD0C6118C97CC90097B357 /* Build configuration list for PBXNativeTarget "Collection ViewsTests" */;
+			buildPhases = (
+				EFDD0C4918C97CC90097B357 /* Sources */,
+				EFDD0C4A18C97CC90097B357 /* Frameworks */,
+				EFDD0C4B18C97CC90097B357 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFDD0C5318C97CC90097B357 /* PBXTargetDependency */,
+			);
+			name = "Collection ViewsTests";
+			productName = "Collection ViewsTests";
+			productReference = EFDD0C4D18C97CC90097B357 /* Collection ViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFDD0C2118C97CC90097B357 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EFDD0C4C18C97CC90097B357 = {
+						TestTargetID = EFDD0C2818C97CC90097B357;
+					};
+				};
+			};
+			buildConfigurationList = EFDD0C2418C97CC90097B357 /* Build configuration list for PBXProject "Collection Views" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFDD0C2018C97CC90097B357;
+			productRefGroup = EFDD0C2A18C97CC90097B357 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFDD0C2818C97CC90097B357 /* Collection Views */,
+				EFDD0C4C18C97CC90097B357 /* Collection ViewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFDD0C2718C97CC90097B357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD0C4318C97CC90097B357 /* Main_iPad.storyboard in Resources */,
+				EFDD0C8818C985D90097B357 /* 8.jpg in Resources */,
+				EFDD0C8418C985D90097B357 /* 4.jpg in Resources */,
+				EFDD0C9D18C985D90097B357 /* Mextures2-UFO.jpg in Resources */,
+				EFDD0C9118C985D90097B357 /* Mexture-Slideshow.jpg in Resources */,
+				EFDD0C8A18C985D90097B357 /* Mexture-1970.jpg in Resources */,
+				EFDD0C9B18C985D90097B357 /* Mextures2-Streaking.jpg in Resources */,
+				EFDD0C9218C985D90097B357 /* Mexture-Water_Damage.jpg in Resources */,
+				EFDD0C9C18C985D90097B357 /* Mextures2-Sunflower.jpg in Resources */,
+				EFDD0C9318C985D90097B357 /* Mexture-YOLOLOMO.jpg in Resources */,
+				EFDD0C9518C985D90097B357 /* Mextures2-1992.jpg in Resources */,
+				EFDD0C8E18C985D90097B357 /* Mexture-Popular.jpg in Resources */,
+				EFDD0C8B18C985D90097B357 /* Mexture-Dusted.jpg in Resources */,
+				EFDD0C8318C985D90097B357 /* 3.jpg in Resources */,
+				EFDD0C8D18C985D90097B357 /* Mexture-Noise.jpg in Resources */,
+				EFDD0C8518C985D90097B357 /* 5.jpg in Resources */,
+				EFDD0C4818C97CC90097B357 /* Images.xcassets in Resources */,
+				EFDD0C8C18C985D90097B357 /* Mexture-Erosion.jpg in Resources */,
+				EFDD0C8918C985D90097B357 /* Mexture-120mm.jpg in Resources */,
+				EFDD0C8218C985D90097B357 /* 2.jpg in Resources */,
+				EFDD0C9918C985D90097B357 /* Mextures2-Lock_Jaw.jpg in Resources */,
+				EFDD0C8718C985D90097B357 /* 7.jpg in Resources */,
+				EFDD0C9618C985D90097B357 /* Mextures2-BokehBabeh.jpg in Resources */,
+				EFDD0C8618C985D90097B357 /* 6.jpg in Resources */,
+				EFDD0C9718C985D90097B357 /* Mextures2-Candelabra.jpg in Resources */,
+				EFDD0C4018C97CC90097B357 /* Main_iPhone.storyboard in Resources */,
+				EFDD0C3718C97CC90097B357 /* InfoPlist.strings in Resources */,
+				EFDD0C9818C985D90097B357 /* Mextures2-CirclePerk.jpg in Resources */,
+				EFDD0C9A18C985D90097B357 /* Mextures2-SpookyScary.jpg in Resources */,
+				EFDD0C9418C985D90097B357 /* Mextures2-1976.jpg in Resources */,
+				EFDD0C8F18C985D90097B357 /* Mexture-Sanded-1.jpg in Resources */,
+				EFDD0C8118C985D90097B357 /* 1.jpg in Resources */,
+				EFDD0C9018C985D90097B357 /* Mexture-Sanded.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD0C4B18C97CC90097B357 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD0C5918C97CC90097B357 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFDD0C2518C97CC90097B357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD0CA118C9878E0097B357 /* PhotoCell.m in Sources */,
+				EFDD0C4618C97CC90097B357 /* ViewController.m in Sources */,
+				EFDD0C3D18C97CC90097B357 /* AppDelegate.m in Sources */,
+				EFDD0C3918C97CC90097B357 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDD0C4918C97CC90097B357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFDD0C5B18C97CC90097B357 /* Collection_ViewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFDD0C5318C97CC90097B357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFDD0C2818C97CC90097B357 /* Collection Views */;
+			targetProxy = EFDD0C5218C97CC90097B357 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFDD0C3518C97CC90097B357 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDD0C3618C97CC90097B357 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EFDD0C3E18C97CC90097B357 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDD0C3F18C97CC90097B357 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EFDD0C4118C97CC90097B357 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDD0C4218C97CC90097B357 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		EFDD0C5718C97CC90097B357 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFDD0C5818C97CC90097B357 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFDD0C5C18C97CC90097B357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFDD0C5D18C97CC90097B357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFDD0C5F18C97CC90097B357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Collection Views/Collection Views-Prefix.pch";
+				INFOPLIST_FILE = "Collection Views/Collection Views-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EFDD0C6018C97CC90097B357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Collection Views/Collection Views-Prefix.pch";
+				INFOPLIST_FILE = "Collection Views/Collection Views-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EFDD0C6218C97CC90097B357 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Collection Views.app/Collection Views";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Collection Views/Collection Views-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Collection ViewsTests/Collection ViewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EFDD0C6318C97CC90097B357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Collection Views.app/Collection Views";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Collection Views/Collection Views-Prefix.pch";
+				INFOPLIST_FILE = "Collection ViewsTests/Collection ViewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFDD0C2418C97CC90097B357 /* Build configuration list for PBXProject "Collection Views" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDD0C5C18C97CC90097B357 /* Debug */,
+				EFDD0C5D18C97CC90097B357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFDD0C5E18C97CC90097B357 /* Build configuration list for PBXNativeTarget "Collection Views" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDD0C5F18C97CC90097B357 /* Debug */,
+				EFDD0C6018C97CC90097B357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFDD0C6118C97CC90097B357 /* Build configuration list for PBXNativeTarget "Collection ViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFDD0C6218C97CC90097B357 /* Debug */,
+				EFDD0C6318C97CC90097B357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFDD0C2118C97CC90097B357 /* Project object */;
+}
