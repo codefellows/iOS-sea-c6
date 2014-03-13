@@ -12,6 +12,7 @@
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *photos;
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -28,6 +29,29 @@
         [_photos addObject:image];
     }
     
+}
+
+- (IBAction)photoWasPressed:(UILongPressGestureRecognizer *)recognizer
+{
+    if (recognizer.state == UIGestureRecognizerStateBegan) {
+        NSLog(@"Picked Up");
+    } else if (recognizer.state == UIGestureRecognizerStateEnded) {
+        NSLog(@"Dropped");
+        
+        NSIndexPath *firstPath = [_collectionView indexPathForItemAtPoint:[recognizer locationInView:_collectionView]];
+        
+        NSIndexPath *secondPath = [NSIndexPath indexPathForRow:3 inSection:0];
+        
+        [_collectionView moveItemAtIndexPath:firstPath toIndexPath:secondPath];
+    }
+
+    
+    NSLog(@"Gesture View: %@", recognizer.view);
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
