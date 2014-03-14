@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF32447A18D2A2B2006814FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32447918D2A2B2006814FA /* Foundation.framework */; };
+		EF32447C18D2A2B2006814FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32447B18D2A2B2006814FA /* CoreGraphics.framework */; };
+		EF32447E18D2A2B2006814FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32447D18D2A2B2006814FA /* UIKit.framework */; };
+		EF32448418D2A2B2006814FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF32448218D2A2B2006814FA /* InfoPlist.strings */; };
+		EF32448618D2A2B3006814FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32448518D2A2B3006814FA /* main.m */; };
+		EF32448A18D2A2B3006814FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32448918D2A2B3006814FA /* AppDelegate.m */; };
+		EF32448D18D2A2B3006814FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF32448B18D2A2B3006814FA /* Main.storyboard */; };
+		EF32449018D2A2B3006814FA /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32448F18D2A2B3006814FA /* MasterViewController.m */; };
+		EF32449318D2A2B3006814FA /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF32449218D2A2B3006814FA /* DetailViewController.m */; };
+		EF32449518D2A2B3006814FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF32449418D2A2B3006814FA /* Images.xcassets */; };
+		EF32449C18D2A2B3006814FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32449B18D2A2B3006814FA /* XCTest.framework */; };
+		EF32449D18D2A2B3006814FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32447918D2A2B2006814FA /* Foundation.framework */; };
+		EF32449E18D2A2B3006814FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32447D18D2A2B2006814FA /* UIKit.framework */; };
+		EF3244A618D2A2B3006814FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF3244A418D2A2B3006814FA /* InfoPlist.strings */; };
+		EF3244A818D2A2B3006814FA /* Github_ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3244A718D2A2B3006814FA /* Github_ClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF32449F18D2A2B3006814FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF32446E18D2A2B2006814FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF32447518D2A2B2006814FA;
+			remoteInfo = "Github Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF32447618D2A2B2006814FA /* Github Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF32447918D2A2B2006814FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF32447B18D2A2B2006814FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF32447D18D2A2B2006814FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF32448118D2A2B2006814FA /* Github Client-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Github Client-Info.plist"; sourceTree = "<group>"; };
+		EF32448318D2A2B2006814FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF32448518D2A2B3006814FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF32448718D2A2B3006814FA /* Github Client-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Github Client-Prefix.pch"; sourceTree = "<group>"; };
+		EF32448818D2A2B3006814FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF32448918D2A2B3006814FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF32448C18D2A2B3006814FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF32448E18D2A2B3006814FA /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		EF32448F18D2A2B3006814FA /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		EF32449118D2A2B3006814FA /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		EF32449218D2A2B3006814FA /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		EF32449418D2A2B3006814FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF32449A18D2A2B3006814FA /* Github ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF32449B18D2A2B3006814FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EF3244A318D2A2B3006814FA /* Github ClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Github ClientTests-Info.plist"; sourceTree = "<group>"; };
+		EF3244A518D2A2B3006814FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF3244A718D2A2B3006814FA /* Github_ClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Github_ClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF32447318D2A2B2006814FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF32447C18D2A2B2006814FA /* CoreGraphics.framework in Frameworks */,
+				EF32447E18D2A2B2006814FA /* UIKit.framework in Frameworks */,
+				EF32447A18D2A2B2006814FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF32449718D2A2B3006814FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF32449C18D2A2B3006814FA /* XCTest.framework in Frameworks */,
+				EF32449E18D2A2B3006814FA /* UIKit.framework in Frameworks */,
+				EF32449D18D2A2B3006814FA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF32446D18D2A2B2006814FA = {
+			isa = PBXGroup;
+			children = (
+				EF32447F18D2A2B2006814FA /* Github Client */,
+				EF3244A118D2A2B3006814FA /* Github ClientTests */,
+				EF32447818D2A2B2006814FA /* Frameworks */,
+				EF32447718D2A2B2006814FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF32447718D2A2B2006814FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF32447618D2A2B2006814FA /* Github Client.app */,
+				EF32449A18D2A2B3006814FA /* Github ClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF32447818D2A2B2006814FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF32447918D2A2B2006814FA /* Foundation.framework */,
+				EF32447B18D2A2B2006814FA /* CoreGraphics.framework */,
+				EF32447D18D2A2B2006814FA /* UIKit.framework */,
+				EF32449B18D2A2B3006814FA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF32447F18D2A2B2006814FA /* Github Client */ = {
+			isa = PBXGroup;
+			children = (
+				EF32448818D2A2B3006814FA /* AppDelegate.h */,
+				EF32448918D2A2B3006814FA /* AppDelegate.m */,
+				EF32448B18D2A2B3006814FA /* Main.storyboard */,
+				EF32448E18D2A2B3006814FA /* MasterViewController.h */,
+				EF32448F18D2A2B3006814FA /* MasterViewController.m */,
+				EF32449118D2A2B3006814FA /* DetailViewController.h */,
+				EF32449218D2A2B3006814FA /* DetailViewController.m */,
+				EF32449418D2A2B3006814FA /* Images.xcassets */,
+				EF32448018D2A2B2006814FA /* Supporting Files */,
+			);
+			path = "Github Client";
+			sourceTree = "<group>";
+		};
+		EF32448018D2A2B2006814FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF32448118D2A2B2006814FA /* Github Client-Info.plist */,
+				EF32448218D2A2B2006814FA /* InfoPlist.strings */,
+				EF32448518D2A2B3006814FA /* main.m */,
+				EF32448718D2A2B3006814FA /* Github Client-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF3244A118D2A2B3006814FA /* Github ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF3244A718D2A2B3006814FA /* Github_ClientTests.m */,
+				EF3244A218D2A2B3006814FA /* Supporting Files */,
+			);
+			path = "Github ClientTests";
+			sourceTree = "<group>";
+		};
+		EF3244A218D2A2B3006814FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF3244A318D2A2B3006814FA /* Github ClientTests-Info.plist */,
+				EF3244A418D2A2B3006814FA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF32447518D2A2B2006814FA /* Github Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3244AB18D2A2B3006814FA /* Build configuration list for PBXNativeTarget "Github Client" */;
+			buildPhases = (
+				EF32447218D2A2B2006814FA /* Sources */,
+				EF32447318D2A2B2006814FA /* Frameworks */,
+				EF32447418D2A2B2006814FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Github Client";
+			productName = "Github Client";
+			productReference = EF32447618D2A2B2006814FA /* Github Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF32449918D2A2B3006814FA /* Github ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3244AE18D2A2B3006814FA /* Build configuration list for PBXNativeTarget "Github ClientTests" */;
+			buildPhases = (
+				EF32449618D2A2B3006814FA /* Sources */,
+				EF32449718D2A2B3006814FA /* Frameworks */,
+				EF32449818D2A2B3006814FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF3244A018D2A2B3006814FA /* PBXTargetDependency */,
+			);
+			name = "Github ClientTests";
+			productName = "Github ClientTests";
+			productReference = EF32449A18D2A2B3006814FA /* Github ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF32446E18D2A2B2006814FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Code Fellows";
+				TargetAttributes = {
+					EF32449918D2A2B3006814FA = {
+						TestTargetID = EF32447518D2A2B2006814FA;
+					};
+				};
+			};
+			buildConfigurationList = EF32447118D2A2B2006814FA /* Build configuration list for PBXProject "Github Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF32446D18D2A2B2006814FA;
+			productRefGroup = EF32447718D2A2B2006814FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF32447518D2A2B2006814FA /* Github Client */,
+				EF32449918D2A2B3006814FA /* Github ClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF32447418D2A2B2006814FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF32449518D2A2B3006814FA /* Images.xcassets in Resources */,
+				EF32448418D2A2B2006814FA /* InfoPlist.strings in Resources */,
+				EF32448D18D2A2B3006814FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF32449818D2A2B3006814FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3244A618D2A2B3006814FA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF32447218D2A2B2006814FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF32448A18D2A2B3006814FA /* AppDelegate.m in Sources */,
+				EF32449018D2A2B3006814FA /* MasterViewController.m in Sources */,
+				EF32448618D2A2B3006814FA /* main.m in Sources */,
+				EF32449318D2A2B3006814FA /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF32449618D2A2B3006814FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3244A818D2A2B3006814FA /* Github_ClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF3244A018D2A2B3006814FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF32447518D2A2B2006814FA /* Github Client */;
+			targetProxy = EF32449F18D2A2B3006814FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF32448218D2A2B2006814FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF32448318D2A2B2006814FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF32448B18D2A2B3006814FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF32448C18D2A2B3006814FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF3244A418D2A2B3006814FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3244A518D2A2B3006814FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF3244A918D2A2B3006814FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EF3244AA18D2A2B3006814FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF3244AC18D2A2B3006814FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Github Client/Github Client-Prefix.pch";
+				INFOPLIST_FILE = "Github Client/Github Client-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF3244AD18D2A2B3006814FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Github Client/Github Client-Prefix.pch";
+				INFOPLIST_FILE = "Github Client/Github Client-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EF3244AF18D2A2B3006814FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Github Client.app/Github Client";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Github Client/Github Client-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Github ClientTests/Github ClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EF3244B018D2A2B3006814FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Github Client.app/Github Client";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Github Client/Github Client-Prefix.pch";
+				INFOPLIST_FILE = "Github ClientTests/Github ClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF32447118D2A2B2006814FA /* Build configuration list for PBXProject "Github Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3244A918D2A2B3006814FA /* Debug */,
+				EF3244AA18D2A2B3006814FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF3244AB18D2A2B3006814FA /* Build configuration list for PBXNativeTarget "Github Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3244AC18D2A2B3006814FA /* Debug */,
+				EF3244AD18D2A2B3006814FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF3244AE18D2A2B3006814FA /* Build configuration list for PBXNativeTarget "Github ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3244AF18D2A2B3006814FA /* Debug */,
+				EF3244B018D2A2B3006814FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF32446E18D2A2B2006814FA /* Project object */;
+}
