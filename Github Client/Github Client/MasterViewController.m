@@ -7,8 +7,8 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
+#import "Repo.h"
 
 @interface MasterViewController () <UISearchBarDelegate>
 
@@ -31,27 +31,44 @@
 
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
-    _repos = [self getReposForQuery:@"iOS"];
+    [self getReposForQuery:@"iOS"];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-    _repos = [self getReposForQuery:searchBar.text];
-    [self.tableView reloadData];
+    [self getReposForQuery:searchBar.text];
 }
 
-- (NSMutableArray *)getReposForQuery:(NSString *)query
+- (void)getReposForQuery:(NSString *)query
 {
-    NSString *searchURLString = [NSString stringWithFormat:@"https://api.github.com/search/repositories?q=%@", query];
-    
-    NSURL *searchURL = [NSURL URLWithString:searchURLString];
+    NSOperationQueue *downloadQueue = [NSOperationQueue new];
+    [downloadQueue addOperationWithBlock:^{
 
-    NSData *searchData = [NSData dataWithContentsOfURL:searchURL];
+        NSString *searchURLString = [NSString stringWithFormat:@"https://api.github.com/search/repositories?q=%@", query];
+        
+        NSURL *searchURL = [NSURL URLWithString:searchURLString];
+        
+        NSData *searchData = [NSData dataWithContentsOfURL:searchURL];
+        
+        NSDictionary *searchDict = [NSJSONSerialization JSONObjectWithData:searchData
+                                                                   options:NSJSONReadingMutableContainers
+                                                                     error:nil];
+        
+        NSMutableArray *tempRepos = [NSMutableArray new];
+        
+        for (NSDictionary *repo in [searchDict objectForKey:@"items"]) {
+            Repo *downloadedRepo = [[Repo alloc] initWithJSON:repo];
+            [tempRepos addObject:downloadedRepo];
+        }    
+        
+        NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
+        
+        [mainQueue addOperationWithBlock:^{
+            _repos = tempRepos;
+            [self.tableView reloadData];
+        }];
     
-    NSDictionary *searchDict = [NSJSONSerialization JSONObjectWithData:searchData
-                                                               options:NSJSONReadingMutableContainers
-                                                                 error:nil];
-    return [searchDict objectForKey:@"items"];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,15 +93,16 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDictionary *repo = _repos[indexPath.row];
-    cell.textLabel.text = [repo objectForKey:@"name"];
+    Repo *repo = _repos[indexPath.row];
+    cell.textLabel.text = repo.name;
+    cell.imageView.image = repo.authorAvatar;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *repo = _repos[indexPath.row];
-    self.detailViewController.repoURL = [NSURL URLWithString:[repo objectForKey:@"html_url"]];
+    Repo *repo = _repos[indexPath.row];
+    self.detailViewController.repo = repo;
 }
 
 @end

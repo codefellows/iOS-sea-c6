@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Repo.h"
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
-@property (strong, nonatomic) NSURL *repoURL;
+@property (strong, nonatomic) Repo *repo;
 
 @property (weak, nonatomic) IBOutlet UIWebView *repoWebView;
 @end

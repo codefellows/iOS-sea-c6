@@ -22,6 +22,7 @@
 		EF32449E18D2A2B3006814FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF32447D18D2A2B2006814FA /* UIKit.framework */; };
 		EF3244A618D2A2B3006814FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF3244A418D2A2B3006814FA /* InfoPlist.strings */; };
 		EF3244A818D2A2B3006814FA /* Github_ClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3244A718D2A2B3006814FA /* Github_ClientTests.m */; };
+		EF3244B318D2AA60006814FA /* Repo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3244B218D2AA60006814FA /* Repo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		EF3244A318D2A2B3006814FA /* Github ClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Github ClientTests-Info.plist"; sourceTree = "<group>"; };
 		EF3244A518D2A2B3006814FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF3244A718D2A2B3006814FA /* Github_ClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Github_ClientTests.m; sourceTree = "<group>"; };
+		EF3244B118D2AA60006814FA /* Repo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repo.h; sourceTree = "<group>"; };
+		EF3244B218D2AA60006814FA /* Repo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				EF32449218D2A2B3006814FA /* DetailViewController.m */,
 				EF32449418D2A2B3006814FA /* Images.xcassets */,
 				EF32448018D2A2B2006814FA /* Supporting Files */,
+				EF3244B118D2AA60006814FA /* Repo.h */,
+				EF3244B218D2AA60006814FA /* Repo.m */,
 			);
 			path = "Github Client";
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3244B318D2AA60006814FA /* Repo.m in Sources */,
 				EF32448A18D2A2B3006814FA /* AppDelegate.m in Sources */,
 				EF32449018D2A2B3006814FA /* MasterViewController.m in Sources */,
 				EF32448618D2A2B3006814FA /* main.m in Sources */,
@@ -464,6 +470,7 @@
 				EF3244AD18D2A2B3006814FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF3244AE18D2A2B3006814FA /* Build configuration list for PBXNativeTarget "Github ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +479,7 @@
 				EF3244B018D2A2B3006814FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
