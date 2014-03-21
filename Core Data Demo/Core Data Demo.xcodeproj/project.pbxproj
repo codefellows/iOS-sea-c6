@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF438E2C18D94D3D002C0BDA /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = EF438E2B18D94D3D002C0BDA /* Review.m */; };
-		EF438E2F18D94D42002C0BDA /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = EF438E2E18D94D42002C0BDA /* Event.m */; };
+		EF3C763F18DBD8FB00DC3BCB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3C763E18DBD8FB00DC3BCB /* User.m */; };
+		EF3C764218DBD8FC00DC3BCB /* Repo.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3C764118DBD8FC00DC3BCB /* Repo.m */; };
+		EF3C764518DBD8FC00DC3BCB /* Organization.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3C764418DBD8FC00DC3BCB /* Organization.m */; };
+		EF3C764B18DBE56000DC3BCB /* GithubNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3C764A18DBE56000DC3BCB /* GithubNetworkManager.m */; };
 		EFF0308618D938670057EE85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0308518D938670057EE85 /* Foundation.framework */; };
 		EFF0308818D938670057EE85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0308718D938670057EE85 /* CoreGraphics.framework */; };
 		EFF0308A18D938670057EE85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0308918D938670057EE85 /* UIKit.framework */; };
@@ -41,10 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EF438E2A18D94D3D002C0BDA /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
-		EF438E2B18D94D3D002C0BDA /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
-		EF438E2D18D94D42002C0BDA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		EF438E2E18D94D42002C0BDA /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		EF3C763D18DBD8FB00DC3BCB /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = "Core Data Demo/User.h"; sourceTree = "<group>"; };
+		EF3C763E18DBD8FB00DC3BCB /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = "Core Data Demo/User.m"; sourceTree = "<group>"; };
+		EF3C764018DBD8FC00DC3BCB /* Repo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Repo.h; path = "Core Data Demo/Repo.h"; sourceTree = "<group>"; };
+		EF3C764118DBD8FC00DC3BCB /* Repo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Repo.m; path = "Core Data Demo/Repo.m"; sourceTree = "<group>"; };
+		EF3C764318DBD8FC00DC3BCB /* Organization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Organization.h; path = "Core Data Demo/Organization.h"; sourceTree = "<group>"; };
+		EF3C764418DBD8FC00DC3BCB /* Organization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Organization.m; path = "Core Data Demo/Organization.m"; sourceTree = "<group>"; };
+		EF3C764918DBE56000DC3BCB /* GithubNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubNetworkManager.h; sourceTree = "<group>"; };
+		EF3C764A18DBE56000DC3BCB /* GithubNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubNetworkManager.m; sourceTree = "<group>"; };
 		EFF0308218D938670057EE85 /* Core Data Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF0308518D938670057EE85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EFF0308718D938670057EE85 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +106,12 @@
 		EFF0307918D938670057EE85 = {
 			isa = PBXGroup;
 			children = (
+				EF3C764318DBD8FC00DC3BCB /* Organization.h */,
+				EF3C764418DBD8FC00DC3BCB /* Organization.m */,
+				EF3C764018DBD8FC00DC3BCB /* Repo.h */,
+				EF3C764118DBD8FC00DC3BCB /* Repo.m */,
+				EF3C763D18DBD8FB00DC3BCB /* User.h */,
+				EF3C763E18DBD8FB00DC3BCB /* User.m */,
 				EFF0308D18D938670057EE85 /* Core Data Demo */,
 				EFF030B618D938670057EE85 /* Core Data DemoTests */,
 				EFF0308418D938670057EE85 /* Frameworks */,
@@ -131,10 +143,8 @@
 		EFF0308D18D938670057EE85 /* Core Data Demo */ = {
 			isa = PBXGroup;
 			children = (
-				EF438E2D18D94D42002C0BDA /* Event.h */,
-				EF438E2E18D94D42002C0BDA /* Event.m */,
-				EF438E2A18D94D3D002C0BDA /* Review.h */,
-				EF438E2B18D94D3D002C0BDA /* Review.m */,
+				EF3C764918DBE56000DC3BCB /* GithubNetworkManager.h */,
+				EF3C764A18DBE56000DC3BCB /* GithubNetworkManager.m */,
 				EFF0309618D938670057EE85 /* AppDelegate.h */,
 				EFF0309718D938670057EE85 /* AppDelegate.m */,
 				EFF0309918D938670057EE85 /* Main_iPhone.storyboard */,
@@ -284,13 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3C764218DBD8FC00DC3BCB /* Repo.m in Sources */,
 				EFF030A718D938670057EE85 /* DetailViewController.m in Sources */,
 				EFF030A418D938670057EE85 /* MasterViewController.m in Sources */,
+				EF3C763F18DBD8FB00DC3BCB /* User.m in Sources */,
 				EFF0309818D938670057EE85 /* AppDelegate.m in Sources */,
 				EFF030A118D938670057EE85 /* Core_Data_Demo.xcdatamodeld in Sources */,
+				EF3C764518DBD8FC00DC3BCB /* Organization.m in Sources */,
+				EF3C764B18DBE56000DC3BCB /* GithubNetworkManager.m in Sources */,
 				EFF0309418D938670057EE85 /* main.m in Sources */,
-				EF438E2C18D94D3D002C0BDA /* Review.m in Sources */,
-				EF438E2F18D94D42002C0BDA /* Event.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

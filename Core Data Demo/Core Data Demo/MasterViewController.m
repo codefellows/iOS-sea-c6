@@ -8,9 +8,14 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import "Event.h"
+#import "githubNetworkManager.h"
+#import "Repo.h"
+#import "User.h"
 
-@interface MasterViewController ()
+@interface MasterViewController () <GitHubNetworkManageDelegate>
+
+@property (nonatomic,strong) GithubNetworkManager *githubNetworkManager;
+
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
@@ -28,12 +33,34 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.githubNetworkManager = [GithubNetworkManager new];
+    self.githubNetworkManager.delegate = self;
+    [self downloadReposForCurrentUser:@"plenipotentSS"];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+}
+
+- (void)downloadReposForCurrentUser:(NSString*)username
+{
+    [self.githubNetworkManager downloadReposForUsername:username];
+}
+
+- (void)insertDownloadedArrayToController:(NSArray *)json
+{
+    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
+
+    for (NSDictionary *dictionary in json) {
+        Repo *repo = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:self.managedObjectContext];
+        repo.name = [dictionary objectForKey:@"name"] ? [dictionary objectForKey:@"name"] : @"";
+        [context save:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,16 +73,13 @@
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    Event *event = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-    event.timeStamp = [NSDate date];
+    Repo *repo = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:self.managedObjectContext];
+    repo.name = @"John";
     
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]) {
-         // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
     }
 }
 
@@ -93,10 +117,7 @@
         
         NSError *error = nil;
         if (![context save:&error]) {
-             // Replace this implementation with code to handle the error appropriately.
-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
         }
     }   
 }
@@ -117,11 +138,11 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:object];
-    }
+//    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+//        [[segue destinationViewController] setDetailItem:object];
+//    }
 }
 
 #pragma mark - Fetched results controller
@@ -135,14 +156,14 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
     
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Repo" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -155,10 +176,7 @@
     
 	NSError *error = nil;
 	if (![self.fetchedResultsController performFetch:&error]) {
-	     // Replace this implementation with code to handle the error appropriately.
-	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
 	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-	    abort();
 	} else {
         NSLog(@"No Error");
     }
@@ -228,8 +246,8 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    Event *event = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = event.timeStamp.description;
+    Repo *repo  = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = repo.name;
 }
 
 @end
